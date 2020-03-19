@@ -12,7 +12,7 @@ const { GraphQLObjectType, GraphQLString, GraphQLSchema,
 const graphQLDate = require('graphql-iso-date');
 const { GraphQLDateTime } = graphQLDate;
 
-const User = require('models/user');
+const User = require('./models/user');
 
 
 
