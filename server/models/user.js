@@ -14,8 +14,16 @@ const Schema = mongoose.Schema;
 const userSchema = new Schema({
   firstname: String,
   lastname: String,
-  email: String,
-  username: String
+  email: {
+    type: String,
+    unique: true,
+  },
+  username: {
+    type: String,
+    unique: true,
+  },
+  password: String,
+  loggedIn: Boolean
 });
 
 //MODEL
